@@ -1,0 +1,4 @@
+@import url(home/home.css);
+@import url(mobile/mobile.css) (max-device-width: 480px);
+@import url(tablet/tablet.css) (min-device-width: 481px) and (max-device-width: 768px);
+@import url(laptop/laptop.css) (min-device-width: 769px) and (max-device-width: 1000px);

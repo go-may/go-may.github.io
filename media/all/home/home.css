@@ -1,0 +1,553 @@
+	/* body */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: skyblue;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+
+		/* header, menu, ul, li and a */
+
+
+#header .menu ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+#header .menu ul li a {
+	color: white;
+	display: block;
+	padding: 10px 20px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#header .menu ul {
+	margin-left: 100px;
+}
+
+#header .menu ul li a:hover {
+	position: relative;
+	top: -5px;
+	background: tomato;
+	border-radius: 30px;
+}
+
+#header .menu {
+	background: black;
+}
+
+		/* menu */
+
+#header .menu {
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	position: fixed;
+	height: 100px;
+}
+
+#header .menu-mobile ul {
+	list-style-type: none;
+}
+
+.menu-mobile > ul > li {
+	float: left;
+}
+
+#header .menu-mobile {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #dddddd;
+	margin-bottom: 50px;
+	height: 65px;
+	margin-bottom: 100px;
+}
+
+#header .menu-mobile ul li a {
+	color: black;
+	padding: 10px;
+	margin-right: 5px;
+	display: inline-block;
+	padding-bottom: 3px;
+	font-size: 18px;
+	text-decoration: none;
+}
+#header .menu-mobile ul {
+	margin-left: 110px;
+}
+#header .menu-mobile li a:hover {
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+
+.menu-mobile ul ul {
+	display: none;
+	position: absolute;
+	top: 40px;
+}
+
+.menu-mobile ul ul li {
+	display: block;
+	margin-right: 40px;
+}
+
+.menu-mobile ul ul ul {
+	display: none;
+	position: absolute;
+	top: -8px;
+	left: 40px;
+}
+
+.menu-mobile ul ul ul li {
+	display: block;
+	margin-right: 40px;
+}
+
+
+.menu-mobile ul li ul li:hover .character-mobile {
+	display: block;
+	background: #dddddd;
+	height: 250px;
+	width: 500px;
+}
+
+.menu-mobile ul::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.menu-mobile ul .characters-mini:hover #characters-names {
+	display: block;
+	height: 150px;
+	background: #dddddd;
+}
+
+		/* wrapper */
+
+
+	#main .mobiles .container-mobiles .container .mobile .photo-mobile, .info-mobile, .info-meta,	.and {
+	padding: 10px;
+}
+
+
+#main .mobiles .container-mobiles .container .mobile a {
+	text-decoration: none;
+	color: black;
+}
+
+#main .mobiles .container-mobiles .container .mobile a:hover {
+	color: tomato;
+}
+
+#main .mobiles .container-mobiles .container .mobile div p {
+	text-align: center;
+}
+
+#main .mobiles .container-mobiles .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: dodgerblue;
+}
+
+#main .mobiles .container-mobiles .container .mobile .and .info-buy {
+	background: linear-gradient(to right, pink, orange);
+	border-radius: 30px;
+	padding: 10px;
+	width: 100px;
+	text-decoration: none;
+}
+
+
+
+#main .mobiles .container-mobiles .container .mobile .and a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	z-index: 1;
+}
+
+#main .mobiles .container-mobiles .container .mobile span {
+	text-decoration: line-through;
+}
+
+#main .mobiles .container-mobiles .container .mobile small {
+	background: gold;
+}
+
+#main .mobiles .container-mobiles .container .mobile .and {
+	text-align: center;
+}
+
+#main .mobiles .container-mobiles .container .mobile .and a:active {
+	position: relative;
+	top: -10px;
+	right: 10px;
+}
+
+
+#main .mobiles .container-mobiles .container .mobile div {
+	border: 1px solid grey;
+}
+
+		/* floats */
+
+#main .mobiles .container-mobiles .container .mobile {
+	border: 3px solid black;
+	margin: 20px;
+	width: 500px;
+}
+
+		/* h2 */
+
+#main .mobiles .container-mobiles .container .mobile h2 {
+	float: left;
+}	
+
+
+		
+	/* wrapper and main */
+
+#wrapper #main .container-all .container {
+	display: flex;
+	justify-content: center;
+}
+#wrapper #main .container-all .container .nav {
+	min-height: 400px;
+	max-height: 700px;
+}
+
+#wrapper #main .container-all .container div {
+	margin: 30px;
+}
+
+#wrapper #main .container-all .container .nav {
+	background: lightgreen;
+	padding: 10px;
+	height: 330px;
+}
+
+
+#wrapper #main .container-all .container .main {
+	background: gold;
+	padding: 10px;
+}
+
+#wrapper #main .container-all .container .content {
+	background: lime;
+	padding: 20px;
+}
+
+
+
+	/* Slider */
+
+
+.slider {
+	width: 520px;
+	height: 500px;
+	overflow: hidden;
+	border: 10px solid #fff;
+	display: flex;
+}
+
+.middle {
+	position: relative;
+	left: 10%;
+}
+
+.navigation {
+	position: absolute;
+	bottom: 16px;
+	left: 50px;
+	display: flex;
+}
+
+.bar {
+	height: 8px;
+	width: 30px;
+	margin: 6px;
+	cursor: pointer;
+	background: #ddd;
+	opacity: 0.5;
+	border-radius: 10px;
+	transition: all 0.4s ease;
+}
+
+.bar:hover {
+	opacity: 0.8;
+}
+
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
+}
+
+.slides {
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+
+.slide {
+	width: 25%;
+	transition: all 0.6s ease;
+}
+
+.slide img {
+	width: 520px;
+	height: 100%;
+}
+
+#r1:checked ~ .s1 {
+	margin-left: 0;
+}
+#r2:checked ~ .s2 {
+	margin-left: -25%;
+}
+#r3:checked ~ .s3 {
+	margin-left: -50%;
+}
+#r4:checked ~ .s4 {
+	margin-left: -75%;
+}
+
+	/* characters */
+
+#characters .container {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.container .left {
+	color: grey;
+	margin-right: 400px;
+}
+.container .right {
+	color: orange;
+	margin-left: 400px;
+}
+
+.container .right p {
+	cursor: pointer;
+}
+
+	/* of tovar */
+
+#tovar {
+	margin-top: 100px;
+}
+#tovar .container p {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#tovar .container {
+	font-size: 20px;
+	background: black;
+	color: white;
+}
+
+.container .info-meta {
+	display: flex;
+	justify-content: center;
+}
+
+#tovar .container .info {
+	display: flex;
+	justify-content: center;
+}
+#tovar .container .image {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.container .info-text {
+	display: flex;
+	justify-content: center;
+}
+.container .info-text .block {
+	width: 500px;
+}
+.container .info-text-mobile {
+	display: flex;
+	justify-content: center;
+}
+.container .info-text-mobile .block {
+	width: 500px;
+}
+
+.info-name-mobile {
+	display: flex;
+	justify-content: center;
+}
+
+.info-and-image  .block {
+	display: flex;
+	justify-content: center;
+}
+
+.info-text-and-image .container {
+	display: flex;
+	justify-content: center;
+}
+
+.info-text-and-image .container .info {
+	position: relative;
+	left: 200px;
+}
+
+.container-mobile {
+	display: flex;
+	justify-content: center;
+}
+
+.container-mobile .container-block .text-info {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.container-mobile .container-block .meta-info {
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+.container-mobile .container-images {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* Content */ 
+
+#wrapper #main .buy-value span {
+	text-decoration: line-through;
+}
+
+#wrapper #main .buy-value big {
+	background-color: gold;;
+}
+
+#wrapper #main .buy-value {
+	position: relative;
+	left: 50%;
+	top: 400px;
+	width: 500px;
+}
+
+#wrapper #main .buy-value a .buy {
+	background-color: orangered;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#wrapper #main .buy-value a {
+	text-decoration: none;
+}
+
+#wrapper #main .info-of-mobile .container small {
+	color: grey;
+	opacity: 0.5;
+}
+
+
+#wrapper #main .info-of-mobile .container {
+	border: 1px solid grey;
+	width: 600px;
+	height: 130px;
+	margin-left: 70px;
+}
+
+#wrapper #main .info-of-mobile .container .info-2 {
+	float: right;
+}
+
+#wrapper {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+
+	/* comments */
+
+
+
+#comments .comments .container {
+	background: white;
+}
+
+#comments .comments .container .info-name {
+	display: flex;
+	justify-content: center;
+}
+
+#comments .comments .container .info-text {
+	display: flex;
+	justify-content: center;
+}
+
+#comments .comments .container .info-text .block {
+	display: flex;
+	justify-content: center;
+}
+
+.container .info-data {
+	color: grey;
+	display: flex;
+	justify-content: center;
+}
+
+
+	/* footer */
+
+
+
+#footer .menu ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+
+#footer .menu ul li a {
+	color: white;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#footer .menu ul li a:hover {
+	position: relative;
+	top: -5px;
+	background: tomato;
+	border-radius: 30px;
+}
+
+
+#footer .menu {
+	z-index: 1;
+	background: black;
+}
+
+#footer .menu ul {
+	margin-left: 100px;
+}
+
+
+
+#footer {
+	position: relative;
+	bottom: 0;
+}
